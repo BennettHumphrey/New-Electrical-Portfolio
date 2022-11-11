@@ -1,0 +1,591 @@
+/* Sections:
+    -NAV
+    -DROPDOWN
+    -MODAL
+    -BANNER
+    -MAIN BODY
+    -FOOTER */
+
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        font-size: 16px;
+        --main-color: hsla(10, 0%, 90%, 1);
+        --accent-color: hsla(10, 0%, 80%, 1);
+        --company-color: hsla(10, 0%, 90%, 1);
+        --dark-color: hsla(10, 0%, 60%, 1);
+        --text-color: hsla(10, 0%, 30%, 1);
+        --link-color: black;
+        --banner-height: 30rem;
+        --banner-image: url(imgs/London-Ontario-Skyline.webp)
+
+    }
+    
+    html,body
+    {
+        color: var(--text-color);
+        background-color: var(--main-color);
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        width: 100%;
+    }    
+    
+    /* NAV START */
+    
+    
+    nav {
+        position: fixed;
+        background-color: var(--accent-color);
+        width: 100%;
+        height: 2.5rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    nav h1 {
+        position: relative;
+        left: 1rem;
+        top: 0.2rem;
+        display: inline;
+        color: var(--text-color);
+    }
+    
+    #phone-number {
+        display: none;
+    }
+    
+    nav ul {
+        margin: 0;
+        float: right;
+    }
+    
+    nav li {
+        top: 0;
+        float: right;
+        padding: 0.5rem 1rem 0.375rem 0;
+        font-size: 1.25rem;
+        list-style-type: none;
+    }
+    
+    a:link {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
+    
+    a:visited {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+    
+    #h3-link:visited {
+        color: var(--text-color)
+    }
+    
+    @media only screen and (max-width: 700px) {
+        #best-company {
+            display: none;
+        }
+    
+        #phone-number {
+            display: inline;
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        #phone-number {
+            left: 2px;
+            font-size: 1.1rem;
+            top: 9px;
+        }
+
+        nav li {
+            padding: 0.5rem 4px 0.375rem 0;
+        }
+    }
+
+    
+    @media only screen and (max-width: 301px) {
+        nav ul li {
+            padding-right: 0.5rem;
+        }
+    }
+    
+    
+    /* NAV END */
+    
+    
+
+    
+    
+      /*MODAL START*/
+    
+    
+    .modal {
+        position: fixed;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 200ms ease-in-out;
+        left: 50%;
+        top: 50%;
+        z-index: 20;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: var(--main-color);
+        max-width: 80%;
+        padding: 1rem;
+      }
+      
+      .modal.active {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    
+      #pop-up-container > h1 {
+        padding-bottom: 1rem;
+      }
+      
+      #overlay {
+        position: fixed;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        pointer-events: none;
+        z-index: 10;
+      }
+      
+      #overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+    
+    
+    .form-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .form-control {
+        margin-bottom: 0.8rem;
+        border: 2px solid #000;
+        background-color: var(--main-color);
+    }
+    
+    .submit {
+        display: flex;
+        margin: auto;
+        border-radius: 1rem;
+        border: none;
+        padding: 0.5rem;
+        transition-duration: 0.7s;
+    }
+    
+    .submit:hover {
+        background-color: var(--dark-color);
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    
+    
+    /*MODAL END*/
+    
+    
+    /* BANNER START */
+    
+    
+    main {
+        position: relative;
+        top: 2rem;
+        overflow-x: hidden; 
+    }
+    
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: fixed;
+        z-index: 0;
+        width: 100%;
+        height: var(--banner-height);
+        padding-left: 3rem;
+        padding-right: 3rem;
+        background-image: var(--banner-image);
+        background-position: center;
+        background-size: cover;
+        overflow-x: auto;
+    }
+    
+    .banner .company-logo {
+        margin: auto;
+    }
+    
+    .company-logo img {
+        width: 100%;
+    }
+    
+    .banner-info {
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        color: var(--main-color);
+    }
+    
+    .banner-phone {
+        background-color: hsla(10, 0%, 60%, 0.8);
+        width: 20rem;
+        margin: 2rem auto;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--company-color);
+        width: 10rem;
+        height: 2rem;
+        margin: 2% auto;
+        border-radius: 15px;
+        text-align: center;
+        transition-duration: 0.7s;
+    }
+    
+    .button a {
+        width: 200%;
+    }
+    
+    .button:hover {
+        background-color: var(--accent-color);
+        text-decoration: underline;
+        width: 11rem;
+        height: 2.2rem;
+        border-radius: 20px;
+        transition-duration: 0.7s;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    @media only screen and (max-width: 700px) {
+    
+        .banner {
+            top: 2.5rem;
+            padding: 0;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10rem;
+            max-height: var(--banner-height);
+        }
+        
+        .company-logo {
+            margin-top: 2rem;
+        }
+    
+        .banner-phone {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 493px) {
+    
+        .banner {
+            top: 4rem;
+        }
+    
+        main {
+            top: 4rem;
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+    
+        .banner {
+            padding: 0;
+        }
+    
+        .banner-phone {
+            width: 85%; 
+        }
+    
+        .dropdown-menu {
+            font-size: 0.5rem;
+            line-height: 1.5;
+        }
+    }
+    
+    @media only screen and (max-width: 344px) {
+        .banner-phone {
+            position: relative;
+            top: -1rem;
+            margin-top: 0;
+        }    
+    }
+    
+    main {
+        top: var(--banner-height);
+        background-color: var(--main-color);
+        padding-top: 1rem;
+    }
+
+
+    
+    /* BANNER END */
+
+
+
+    /* MAIN BODY START */
+
+.main-container {
+    height: 35rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blank-1 {
+    position: relative;
+    bottom: 2rem;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    line-height: 1.8;
+    border-top: 1px solid #000;
+    padding-top: 4rem;
+}
+
+.services-list-container {
+    margin: 1rem 2rem;
+}
+
+
+
+[class ^= bg] > h2 {
+    color: white;
+}
+
+[class ^= blank] > h2 {
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.main-container > p {
+    width: 50%;
+    line-height: 1.8;
+}
+
+[class ^= bg] > p {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsla(10, 0%, 30%, 0.7);
+    color: #fff;
+}
+
+[class ^= bg] {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-1 {
+    background-image: url(imgs/Office-Interior.webp);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.projects-container {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsla(10, 0%, 30%, 0.7);
+    color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+    .blank-1 {
+        height: 50rem;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        width: 80%;
+    }
+
+    .bg-1 {
+        flex-direction: column;
+    }
+}
+
+.bg-2 {
+    background-image: url(imgs/Person-Installing-Breakers.webp);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blank-2 {
+    height: 28rem;
+}
+
+.about-us-blank > h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.2rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.about-us-blank > p {
+    width: 35%;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-us-bg > p {
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 700px) {
+    .bg-2 {
+        flex-direction: column;
+    }
+
+    .about-us-blank > p {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about-us-bg > p {
+        line-height: 1.4;
+    }
+
+    .about-us-blank > p {
+        width: 85%;
+        line-height: 1.4;
+    }
+}
+
+#contact-us {
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.address-container {
+    position: relative;
+    bottom: 2rem;
+    right: 5rem;
+    margin-right: 30%;
+    line-height: 2;
+    width: 100%;
+}
+
+.contact-address {
+    margin-top: 2rem;
+}
+
+.contact-email {
+    margin-top: 2rem;
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .address-container {
+        bottom: 2rem;
+        right: 0;
+    }
+
+    .blank-3 {
+        height: 40rem;
+    }
+}
+
+    /* MAIN BODY END */
+
+
+
+    /* FOOTER START */
+
+
+footer {
+    position: relative;
+    top: 0;
+}
+
+.footer-flex {
+    display: flex;
+    max-height: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--dark-color);
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container {
+    max-height: 8rem;
+    overflow: hidden;
+    margin: 0 4%;
+}
+
+
+
+
+
+/* FOOTER END */
