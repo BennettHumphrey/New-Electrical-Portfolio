@@ -21,6 +21,7 @@
 -3rd Template ARIA
 -3rd Template Responsive Images 
 -3rd Template Lighthouse
+-3rd Template refactor modal JS
 
 
 -Check Greensock GSAP for parallax fuckery
