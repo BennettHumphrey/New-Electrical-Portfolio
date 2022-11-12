@@ -433,8 +433,8 @@ header img, header a {
 
 .main-service-container li {
     border-bottom: 1px solid #000;
-    width: 60%;
-    max-width: 200px;
+    width: 75%;
+    max-width: 220px;
     text-align: center;
     margin: auto;
     list-style: none;
@@ -563,7 +563,7 @@ header img, header a {
 .prevReview, .nextReview {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   margin-top: -22px;
   padding: 16px;

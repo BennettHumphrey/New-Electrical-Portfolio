@@ -733,6 +733,7 @@ p {
 
 .nextReview, .prevReview {
   color: var(--accent-color);
+  top: 40%;
 }
 
 .reviewDot {

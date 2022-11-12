@@ -1,21 +1,26 @@
 -Main page, fix template 2 screenshot text
 -Main page ARIA
+-Main page Lighthouse
 -1st Template Responsive Images
+-1st Template, link 'learn more' to something
 -1st Template text
 -1st Template, make about-us section link to correct pages
--1st Template, about-us section text wrap
+-1st Template, about-us section text too long for circles
 -1st Template, sub-pages, less see-thru for white overlay
 -1st Template, header and reviews photos are the same, fix it.
 -1st Template, header button isn't too visible
 -1st Template ARIA
+-1st Template Lighthouse
 -2nd Template text
 -2nd Template, make slideshows link to pages
 -2nd Template Responsive Images
 -2nd Template, header opacity layer (Darker)
 -2nd Template ARIA
+-2nd Template Lighthouse
 -3rd Template text
 -3rd Template ARIA
 -3rd Template Responsive Images 
+-3rd Template Lighthouse
 
 
 -Check Greensock GSAP for parallax fuckery
