@@ -21,7 +21,6 @@
         --text-color: hsla(10, 0%, 30%, 1);
         --link-color: black;
         --banner-height: 30rem;
-        --banner-image: url(imgs/London-Ontario-Skyline.webp)
 
     }
     
@@ -225,7 +224,7 @@
         height: var(--banner-height);
         padding-left: 3rem;
         padding-right: 3rem;
-        background-image: var(--banner-image);
+        background-image: url(imgs/City-Skyline-400.webp);
         background-position: center;
         background-size: cover;
         overflow-x: auto;
@@ -413,7 +412,7 @@
 }
 
 .bg-1 {
-    background-image: url(imgs/Office-Interior.webp);
+    background-image: url(imgs/Office-Interior-400.webp);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -446,7 +445,7 @@
 }
 
 .bg-2 {
-    background-image: url(imgs/Person-Installing-Breakers.webp);
+    background-image: url(imgs/outdoor-panel-400.webp);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -583,6 +582,60 @@ footer {
     overflow: hidden;
     margin: 0 4%;
 }
+
+@media only screen and (min-width: 600px) {
+    .banner {
+        background-image: url(./imgs/City-Skyline-600.webp);
+    }
+    
+    .bg-1 {
+        background-image: url(./imgs/Office-Interior-600.webp);
+    }
+
+    .bg-2 {
+      background-image: url(./imgs/outdoor-panel-600.webp);
+    }    
+  }
+  @media only screen and (min-width: 900px) {
+    .banner {
+        background-image: url(./imgs/City-Skyline-900.webp);
+    }
+    
+    .bg-1 {
+        background-image: url(./imgs/Office-Interior-900.webp);
+    }
+
+    .bg-2 {
+      background-image: url(./imgs/outdoor-panel-900.webp);
+    }    
+  }
+  @media only screen and (min-width: 1200px) {
+    .banner {
+        background-image: url(./imgs/City-Skyline-1200.webp);
+    }
+    
+    .bg-1 {
+        background-image: url(./imgs/Office-Interior-1200.webp);
+    }
+
+    .bg-2 {
+      background-image: url(./imgs/outdoor-panel-1200.webp);
+    }    
+  }
+  @media only screen and (min-width: 1400px) {
+    .banner {
+        background-image: url(./imgs/City-Skyline-1800.webp);
+    }
+    
+    .bg-1 {
+        background-image: url(./imgs/Office-Interior-1680.webp);
+    }
+
+    .bg-2 {
+      background-image: url(./imgs/outdoor-panel-1800.webp);
+    }    
+  }
+
 
 
 
