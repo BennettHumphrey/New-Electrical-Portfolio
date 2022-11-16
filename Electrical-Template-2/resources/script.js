@@ -18,7 +18,7 @@ const incrementAutoNext = () => {
   return autoNext++
 }
 
-setInterval(incrementAutoNext, 1000)
+// setInterval(incrementAutoNext, 1000)
 
 let slideIndex = 1;
 showSlides(slideIndex);

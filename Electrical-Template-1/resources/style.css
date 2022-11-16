@@ -251,7 +251,8 @@ header img, header a {
 }
 
 .banner {
-    background-image: url(./imgs/artistic-scaffolding.webp);
+    background-image: url(./imgs/artistic-scaffolding-400.webp);
+    background-size: cover;
     z-index: 0;
     height: 100vw;
     max-height: 350px;
@@ -481,7 +482,8 @@ header img, header a {
 
 .about-us-section {
     z-index: 0;
-    background-image: url(./imgs/Office-Interior.webp);
+    background-image: url(./imgs/Office-Interior-400.webp);
+    background-size: cover;
 }
 
 .about-us-opacity {
@@ -614,11 +616,12 @@ header img, header a {
 }
 
 .reviews-section {
-  background-image: url(./imgs/artistic-scaffolding.webp);
+  background-image: url(./imgs/City-Skyline-400.webp);
+  background-size: cover;
 }
 
 .reviews-opacity {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -789,9 +792,87 @@ footer h4 {
   height: 100%;
   width: 100%;
   /* background-color: darkgrey; */
-  background-image: url(../resources/imgs/artistic-scaffolding.webp);
+  background-image: url(../resources/imgs/artistic-scaffolding-400.webp);
   background-size: cover;
   padding-bottom: 2.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .banner {
+    background-image: url(../resources/imgs/artistic-scaffolding-600.webp);
+  }
+
+  .sub-page-background {
+    background-image: url(../resources/imgs/artistic-scaffolding-600.webp);
+  }
+
+  .reviews-section {
+    background-image: url(./imgs/City-Skyline-600.webp);
+  }
+  
+  .about-us-section {
+    background-image: url(./imgs/Office-Interior-600.webp);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .banner {
+    background-image: url(../resources/imgs/artistic-scaffolding-900.webp);
+  }
+
+  .sub-page-background {
+    background-image: url(../resources/imgs/artistic-scaffolding-900.webp);
+  }
+  
+  .reviews-section {
+    background-image: url(./imgs/City-Skyline-900.webp);
+  }
+  
+  .about-us-section {
+    background-image: url(./imgs/Office-Interior-900.webp);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner {
+    background-image: url(../resources/imgs/artistic-scaffolding-1200.webp);
+  }
+
+  .sub-page-background {
+    background-image: url(../resources/imgs/artistic-scaffolding-1200.webp);
+  }
+  
+  .reviews-section {
+    background-image: url(./imgs/City-Skyline-1200.webp);
+  }
+  
+  .about-us-section {
+    background-image: url(./imgs/Office-Interior-1200.webp);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .banner {
+    background-image: url(../resources/imgs/artistic-scaffolding-1800.webp);
+  }
+
+  .sub-page-background {
+    background-image: url(../resources/imgs/artistic-scaffolding-1800.webp);
+  }
+  
+  .reviews-section {
+    background-image: url(./imgs/City-Skyline-1800.webp);
+  }
+  
+  .about-us-section {
+    background-image: url(./imgs/Office-Interior-1680.webp);
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .banner {
+    background-size: cover;
+  }
+
+  .sub-page-background {
+    background-size: cover;
+  }
 }
 
 .sub-page-main {
