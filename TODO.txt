@@ -1,15 +1,4 @@
--Main page ARIA
--Main page Lighthouse
--1st Template ARIA
--1st Template Lighthouse
--2nd Template, make slideshows link to pages
--2nd Template, header opacity layer (Darker)
--2nd Template ARIA
--2nd Template Lighthouse
--3rd Template refactor modal JS
--3rd Template ARIA
--3rd Template Lighthouse
--3rd Template Gap on top of banner under 493px
+
 
 
 -Check Greensock GSAP for parallax fuckery

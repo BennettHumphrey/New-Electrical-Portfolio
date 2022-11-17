@@ -31,6 +31,10 @@ html,body
     scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: inherit;
+}
+
 main {
   height: 100%;
 }
@@ -170,7 +174,7 @@ header img, header a {
       position: sticky;
       top: -1px;
       background-color: var(--main-color);
-      z-index: 10;
+      z-index: 6;
       display: flex;
       justify-content: space-evenly;
       height: 3rem;
@@ -231,16 +235,12 @@ p {
 
   
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
 }
 
-
-
-/* Hide the images by default */
 .mySlides {
   display: none;
   height: 100%;

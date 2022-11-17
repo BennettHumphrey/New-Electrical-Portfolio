@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="electrical template 3">
     <link rel="icon" href="./resources/imgs/bolt.svg">
     <link rel="stylesheet" href="resources/style.css">
     <script defer src="resources/script.js"></script>
@@ -28,7 +29,7 @@
             <div class="banner-info">
                 <h2 class="banner-phone">To contact an electrician call<br>250-555-5555 now!</h2>
                 
-                <button data-modal-target="#modal" class="button">Request a Service!</button>
+                <button onclick="toggleModal()" class="button">Request a Service!</button>
                 
             </div>
 
@@ -58,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div id="overlay"></div> 
+        <div id="overlay" onclick="toggleModal()"></div> 
 
 
 
@@ -66,27 +67,39 @@
             <div class="blank-1 main-container">
                 <h2>We do all types of commercial projects!</h2>
                 <ul class="services-list">
-                    <div class="services-list-container">
-                        <li>Emergency Standby Power</li>
-                        <li>Communication Systems</li>
-                        <li>Control Wiring</li>
-                        <li>Data Cabling</li>
-                        <li>Design-Build</li>
-                    </div>
-                    <div class="services-list-container">
-                        <li>Lighting Planning & Installations</li>
-                        <li>Fire Alarm Systems</li>
-                        <li>New Construction</li>
-                        <li>Remodelling</li>
-                        <li>Maintenence</li>
-                    </div>
-                    <div class="services-list-container">
-                        <li>Renovations/Additions</li>
-                        <li>System Upgrades</li>
-                        <li>Retro-fitting</li>
-                        <li>Service Work</li>
-                        <li>Re-wiring</li>
-                    </div>
+                    <li class="services-list-li">
+                        <div class="services-list-container">
+                            <ul>
+                                <li>Emergency Standby Power</li>
+                                <li>Communication Systems</li>
+                                <li>Control Wiring</li>
+                                <li>Data Cabling</li>
+                                <li>Design-Build</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="services-list-li">
+                        <div class="services-list-container">
+                            <ul>
+                                <li>Lighting Planning & Installations</li>
+                                <li>Fire Alarm Systems</li>
+                                <li>New Construction</li>
+                                <li>Remodelling</li>
+                                <li>Maintenence</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="services-list-li">
+                        <div class="services-list-container">
+                            <ul>
+                                <li>Renovations/Additions</li>
+                                <li>System Upgrades</li>
+                                <li>Retro-fitting</li>
+                                <li>Service Work</li>
+                                <li>Re-wiring</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="bg-1 main-container">
@@ -128,7 +141,7 @@
                         <address class="contact-email">bennetthumphrey98@gmail.com</address>
                     </div>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42361.28276418002!2d-123.39424189741817!3d48.42620378722595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f738bddb06171%3A0x38e8f3741ebb48ed!2sVictoria%2C%20BC%2C%20Canada!5e0!3m2!1sen!2spe!4v1668272029456!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe title="map location of main office" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42361.28276418002!2d-123.39424189741817!3d48.42620378722595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f738bddb06171%3A0x38e8f3741ebb48ed!2sVictoria%2C%20BC%2C%20Canada!5e0!3m2!1sen!2spe!4v1668272029456!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
