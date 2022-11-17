@@ -316,12 +316,14 @@ header img, header a {
     transition-duration: 0.5s;
     max-width: 200px;
     margin: auto;
+    background-color:hsla(10, 0%, 20%, 0.7);
 }
 
 .more-info:hover {
     border: 1px solid #000;
     color: #000;
     cursor: pointer;
+    background-color: hsla(10, 0%, 95%, 0.7);
 }
 
 @media only screen and (max-width: 300px) {
@@ -476,7 +478,11 @@ header img, header a {
     }
   
     .main-service-container {
-      width: 30vw;
+      width: 25vw;
+    }
+
+    .main-service-container li {
+      width: 90%;
     }
   }
 
@@ -522,6 +528,11 @@ header img, header a {
 
 .about-us-window * {
     margin-block: 1rem;
+}
+.about-us-window p {
+  width: 60%;
+  text-align: center;
+  margin-inline: auto;
 }
 
 .about-us-window:hover {
@@ -878,7 +889,7 @@ footer h4 {
 .sub-page-main {
   width: 95%;
   max-width: 1000px;
-  background-color: hsla(10, 0%, 95%, 0.8);;
+  background-color: hsla(10, 0%, 95%, 0.9);
   position: relative;
   margin: auto;
   padding: 1rem 1rem;
