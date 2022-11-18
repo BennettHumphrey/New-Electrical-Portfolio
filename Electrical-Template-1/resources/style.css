@@ -617,6 +617,7 @@ header img, header a {
   background-image: url(./imgs/City-Skyline-400.webp);
   background-size: cover;
   background-position: center;
+  height: 700px;
 }
 
 .reviews-opacity {
@@ -647,7 +648,6 @@ header img, header a {
   max-width: 500px;
   position: relative;
   margin: auto;
-  height: 100%;
 }
 
 
@@ -661,7 +661,6 @@ header img, header a {
 .slideReview {
   text-align: center;
   color: var(--text-color-light);
-  min-height: 120px;
   height: 100%;
   width: 100%;
   padding: 1rem 2.5rem;

@@ -1,7 +1,6 @@
 let autoNext = 0;
 const incrementAutoNext = () => {
   if(autoNext == 6) {
-    plusSlides(1)
     plusReviewSlides(1)
   }
   return autoNext++

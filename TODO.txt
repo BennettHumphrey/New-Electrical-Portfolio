@@ -1,5 +1,0 @@
-
-
-
--Check Greensock GSAP for parallax fuckery
--Check out ThreeJS

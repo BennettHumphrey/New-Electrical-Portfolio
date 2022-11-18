@@ -497,7 +497,7 @@ p {
 }
 
 .opacity {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -824,6 +824,8 @@ figcaption {
 .semi-footer-menu {
   line-height: 2;
   margin-bottom: 10px;
+  top: -11px;
+  position: relative;
 }
 
 .semi-footer-menu ul {

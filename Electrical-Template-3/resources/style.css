@@ -411,7 +411,7 @@
     width: 30%;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: hsla(10, 0%, 30%, 0.7);
+    background-color: hsla(10, 0%, 30%, 0.9);
     color: #fff;
 }
 
@@ -452,10 +452,16 @@
     width: 80%;
 }
 
+.about-us-blank > h3 {
+    font-size: 1.5rem;
+}
+
 .about-us-blank > p {
-    width: 35%;
+    width: 65%;
     margin: auto;
+    margin-top: 1rem;
     line-height: 1.8;
+    font-size: 1.4rem;
 }
 
 .about-us-bg > p {
