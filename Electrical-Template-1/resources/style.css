@@ -251,7 +251,7 @@ header img, header a {
 }
 
 .banner {
-    background-image: url(./imgs/artistic-scaffolding-400.webp);
+    background-image: url(./imgs/artistic-scaffolding-600.webp);
     background-size: cover;
     z-index: 0;
     height: 100vw;
@@ -475,7 +475,7 @@ header img, header a {
 
 .about-us-section {
     z-index: 0;
-    background-image: url(./imgs/Office-Interior-400.webp);
+    background-image: url(./imgs/Office-Interior-600.webp);
     background-size: cover;
 }
 
@@ -614,7 +614,7 @@ header img, header a {
 }
 
 .reviews-section {
-  background-image: url(./imgs/City-Skyline-400.webp);
+  background-image: url(./imgs/City-Skyline-600.webp);
   background-size: cover;
   background-position: center;
   height: 700px;
@@ -791,28 +791,11 @@ footer h4 {
   height: 100%;
   width: 100%;
   /* background-color: darkgrey; */
-  background-image: url(../resources/imgs/artistic-scaffolding-400.webp);
+  background-image: url(../resources/imgs/artistic-scaffolding-600.webp);
   background-size: cover;
   padding-bottom: 2.5rem;
 }
 
-@media only screen and (min-width: 600px) {
-  .banner {
-    background-image: url(../resources/imgs/artistic-scaffolding-600.webp);
-  }
-
-  .sub-page-background {
-    background-image: url(../resources/imgs/artistic-scaffolding-600.webp);
-  }
-
-  .reviews-section {
-    background-image: url(./imgs/City-Skyline-600.webp);
-  }
-  
-  .about-us-section {
-    background-image: url(./imgs/Office-Interior-600.webp);
-  }
-}
 @media only screen and (min-width: 900px) {
   .banner {
     background-image: url(../resources/imgs/artistic-scaffolding-900.webp);

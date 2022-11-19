@@ -81,14 +81,8 @@ button {
 }
 
 body {
-    background-image: url(./imgs/bg-400.webp);
+    background-image: url(./imgs/bg-600.webp);
     background-size: cover;
-}
-
-@media only screen and (min-width: 481px) {
-    body {
-        background-image: url(./imgs/bg-600.webp);
-    }
 }
 
 @media only screen and (min-width: 769px) {

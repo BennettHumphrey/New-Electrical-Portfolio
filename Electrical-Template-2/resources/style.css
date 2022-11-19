@@ -468,18 +468,13 @@ p {
 
 
 .bg {
-  background-image: url(./imgs/artistic-scaffolding-400.webp);
+  background-image: url(./imgs/artistic-scaffolding-600.webp);
   background-attachment: fixed;
   background-position: left 00px top 0;
   background-size: cover;
   z-index: 0;
 }
 
-@media only screen and (min-width: 600px) {
-  .bg {
-    background-image: url(./imgs/artistic-scaffolding-600.webp);
-  }
-}
 @media only screen and (min-width: 900px) {
   .bg {
     background-image: url(./imgs/artistic-scaffolding-900.webp);
@@ -890,17 +885,12 @@ footer p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url(./imgs/outdoor-panel-400.webp);
+  background-image: url(./imgs/outdoor-panel-600.webp);
   background-size: cover;
   background-position: 35%;
   z-index: 1;
 }
 
-@media only screen and (min-width: 600px) {
-  .sub-page-header {
-    background-image: url(./imgs/outdoor-panel-600.webp);
-  }
-}
 @media only screen and (min-width: 900px) {
   .sub-page-header {
     background-image: url(./imgs/outdoor-panel-900.webp);
