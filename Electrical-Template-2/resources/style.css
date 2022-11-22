@@ -44,7 +44,6 @@ button {
   cursor: inherit;
 }
 
-/* NAV START */
 
 header h1 {
     text-align: center;
@@ -264,7 +263,11 @@ p {
 .mySlides-overlay h1 {
   color: var(--text-color-light);
   font-size: 8vw;
+}
 
+.com-stroke {
+  -webkit-text-stroke-color: lightgray;
+  -webkit-text-stroke-width: 1px;
 }
 
 .mySlides-overlay p {
@@ -367,7 +370,6 @@ p {
   z-index: 2;
 }
 
-/* Next & previous buttons */
 .prev, .next, .prevReview, .nextReview {
   cursor: pointer;
   position: absolute;
@@ -384,18 +386,15 @@ p {
   z-index: 4;
 }
 
-/* Position the "next button" to the right */
 .next, .nextReview {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover, .nextReview:hover, .prevReview:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
   color: var(--text-color-light);
   font-size: 15px;
@@ -407,7 +406,6 @@ p {
 }
 
 
-/* The dots/bullets/indicators */
 .dot, .reviewDot {
   cursor: pointer;
   height: 15px;
@@ -424,7 +422,6 @@ p {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 2s;
@@ -520,7 +517,10 @@ p {
   font-weight: 500;
   margin: 3rem 1rem;
   line-height: 1.5;
-  
+}
+
+.about > .bg > .opacity > p {
+  font-size: 1.5rem;
 }
 
 .about-windows-section {
@@ -529,9 +529,6 @@ p {
   gap: 2rem;
   padding-bottom: 5rem;
 }
-
-
-
 
 .about-window {
   background-color: var(--main-color);
@@ -1151,7 +1148,6 @@ iframe {
     display: none;
   }
 }
-
 
 
 
